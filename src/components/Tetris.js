@@ -17,7 +17,7 @@ const Tetris = () => {
     const [speed, setSpeed] = useState(null);
     const [gameOver, setGameOver] = useState(false);
 
-    const [player, updatePlayerPosition, resetPlayer] = usePlayer();
+    const [player, updatePlayerPosition, resetPlayer, playerRotate] = usePlayer();
     const [stage, setStage] = useStage(player, resetPlayer);
 
     const movePlayer = (direction) => {
@@ -58,8 +58,15 @@ const Tetris = () => {
             /* Right Key */
             } else if (keyCode === 39) {
                 movePlayer(1);
+            /* Down Key */
             } else if (keyCode === 40) {
                 dropPlayer();
+            /* Shift Key (Rotate Clockwise) */
+            } else if (keyCode === 16) {
+                playerRotate(stage, 1);
+            /* Up Key (Rotate Anti-Clockwise) */
+            } else if (keyCode === 38) {
+                playerRotate(stage, -1);
             }
         }
     }
