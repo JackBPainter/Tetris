@@ -28,7 +28,8 @@ export const usePlayer = () => {
         let offset = 1;
         while(checkCollision(clonedPlayer, stage, { x: 0, y: 0})) {
             clonedPlayer.position.x += offset;
-            /* Checks to see whether it can rotate without collision */
+            /* Checks to see whether it can rotate without collision 
+                and shifts if collison would occur */
             offset = -(offset + (offset > 0 ? 1 : -1));
             if (offset > clonedPlayer.tetromino[0].length) {
                 rotate(clonedPlayer.tetromino, -direction);
