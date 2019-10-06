@@ -35,7 +35,7 @@ const Tetris = () => {
     }
 
     const dropPlayer = () => {
-        drop()
+        drop();
     }
 
     const move = ({ keyCode }) => {
