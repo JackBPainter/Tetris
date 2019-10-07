@@ -47,7 +47,7 @@ const Tetris = () => {
         if (rows > (level + 1) * 10) {
             setLevel(prevState => prevState + 1);
             /* Increase drop speed based on current level */
-            setSpeed(1000 / (level + 1) + 300);
+            setSpeed(1000 / (level + 1) + 200);
         }
 
         if(!checkCollision(player, stage, { x: 0, y: 1})) {
@@ -65,7 +65,7 @@ const Tetris = () => {
     const keyUp = ({ keyCode }) => {
         if (!gameOver) {
             if (keyCode === 40) {
-                setSpeed(1000 / (level + 1) + 300);
+                setSpeed(1000 / (level + 1) + 200);
             }
         }    
     }

@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 import bgImg from '../../image/bg.png';
-import Display from '../Display';
 
 export const StyledTetrisWrapper = styled.div`
     height: 100vh;   
@@ -17,7 +16,6 @@ export const StyledTetris = styled.div`
     margin: 0 auto;
     padding: 50px;
     max-width: 900px;
-
 
     aside {
         width: 100%;
