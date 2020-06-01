@@ -1,4 +1,4 @@
-This is a Tetris application that was built with React, JavaScript, HTML and Styled Components. A lot of the game theory and understanding of how to create this, came from Meth Meth Method - (https://www.youtube.com/watch?v=H2aW5V46khA)
+This is a Tetris application that was built with React, JavaScript, HTML and Styled Components. A lot of the game theory and understanding of how to create this, came from Meth Meth Method - (https://www.youtube.com/watch?v=H2aW5V46khA) and Weibenfalk - (https://www.youtube.com/watch?v=ZGOaCxX8HIU)
 
 The game speed does increase depending on what your current score is... so don't get too comfortable :)
 
